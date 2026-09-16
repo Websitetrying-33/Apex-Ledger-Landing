@@ -562,7 +562,7 @@
             <div class="logo-icon">A</div>
             Apex<span>Ledger</span>
         </div>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -853,13 +853,11 @@
     </div>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
 
         function toggleMenu() {
             navMenu.classList.toggle('active');
         }
-        hamburger.addEventListener('click', toggleMenu);
 
         // Calculator
         const range = document.getElementById('revenueRange');
